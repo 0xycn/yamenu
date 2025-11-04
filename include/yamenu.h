@@ -24,6 +24,7 @@
 #include <dirent.h>
 #include <unistd.h>
 #include "stb_image.h"
+#include "font.h"
 
 typedef struct {
 	const char *title;

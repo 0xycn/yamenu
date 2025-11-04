@@ -1,6 +1,6 @@
 #define STB_IMAGE_IMPLEMENTATION
 #include "yamenu.h"
-#include "shaders.h"
+#include "shaders.h" 
 
 YM_Window ym_create_window() {
 	YM_Window tmp_window;
@@ -242,7 +242,7 @@ void ym_create_text_renderer(YM_Context *context) {
 
 	FT_Face font_face;
 
-	if (FT_New_Face(font, "/usr/share/fonts/TTF/DejaVuSans.ttf", 0, &font_face)) {
+	if (FT_New_Memory_Face(font, DejaVuSans_ttf, DejaVuSans_ttf_len, 0, &font_face)) { 
 		perror("couldn't load the fonts\n");
 	}
 

@@ -15,7 +15,7 @@ endif()
 
 project(yamenu)
 
-add_executable(yamenu main.c src/yamenu.c ${SRC_FILES})
+add_executable(yamenu main.c src/yamenu.c src/font.c ${SRC_FILES})
 if(WIN32)
     target_link_libraries(yamenu PRIVATE libSDL3.dll.a libcglm.dll.a m libfreetype.dll.a)
 else()
